@@ -7,8 +7,8 @@
   <!-- Normalize.css for better cross-browser consistency -->
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <!-- Main CSS file -->
-  <link rel="stylesheet" href="css/general-styles.css" type="text/css">
   <link rel="stylesheet" href="css/restaurant-styles.css" type="text/css">
+  <link rel="stylesheet" href="css/general-styles.css" type="text/css">
 
   <title>Restaurant Info</title>
 </head>
@@ -31,6 +31,11 @@
 
   <!-- Beginning main -->
   <main id="detail-container">
+    <!-- Beginning map -->
+    <section id="map-container">
+        <div id="map"></div>
+      </section>
+      <!-- End map -->    
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
         <h2 id="restaurant-name"></h2>
@@ -41,14 +46,9 @@
       </section>
       <!-- end restaurant -->    
     <div id="filler"></div>
-    <!-- Beginning map -->
-    <section id="map-container">
-      <div id="map"></div>
-    </section>
-    <!-- End map -->
     <!-- Beginning reviews -->
     <section id="reviews-container">
-      <ul id="reviews-list"></ul>
+      <div id="reviews-list"></div>
     </section>
     <!-- End reviews -->
   </main>
